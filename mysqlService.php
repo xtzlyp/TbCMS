@@ -36,13 +36,11 @@ class MysqlAction{
 	public function query($sql){
 		$sqlResult = mysql_query($sql);  
 		if($sqlResult){
-			$count=mysql_fetch_row($sqlResult);
-			if(is_array($count)){
-				$row=mysql_fetch_array($sqlResult,MYSQL_ASSOC);
-				return $row;
-			}else{
-				return 'success';
+			while ($row=mysql_fetch_array($sqlResult,MYSQL_ASSOC))
+			{
+				$rows[]=$row;
 			}
+			return $rows;
 		}else{
 			return 'sql错误';
 		}

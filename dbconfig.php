@@ -1,0 +1,9 @@
+<?php
+$DbConfig=array(
+	1=>array('host'=>'localhost','username'=>'cmms','psd'=>'cmms'),
+	2=>array('host'=>'localhost','username'=>'cmms','psd'=>'cmms'),
+	3=>array('host'=>'localhost','username'=>'cmms','psd'=>'cmms'),
+	4=>array('host'=>'localhost','username'=>'cmms','psd'=>'cmms'),
+	5=>array('host'=>'localhost','username'=>'cmms','psd'=>'cmms'),
+);
+?>
